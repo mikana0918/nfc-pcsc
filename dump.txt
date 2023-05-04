@@ -1,0 +1,93 @@
+IDm : 01 01 01 12 E5 1A AD 27 
+PMm : 01 36 42 82 47 45 9A FF 
+
+* Number of service = 1
+
+# System code: 0003
+ # Number of area = 10
+  # Area: 0000 - FFFE
+  # Area: 0040 - 07FF
+  # Area: 00C0 - 00FF
+  # Area: 0800 - 0FBF
+  # Area: 0FC0 - 7FFF
+  # Area: 1000 - 17BF
+  # Area: 17C0 - 7FFF
+  # Area: 1A40 - 1B7F
+  # Area: 8000 - FFFE
+  # Area: 9600 - 973F
+ # Number of service code = 43
+  # Serivce code = 0048 : Random Access R/W (Protected)
+  # Serivce code = 004A : Random Access Read only (Protected)
+  # Serivce code = 0088 : Random Access R/W (Protected)
+  # Serivce code = 008B : Random Access Read only
+   008B:0000 00 00 00 00 00 00 00 00 32 00 00 15 00 00 0F 1A 
+   008B:0001 data is not available
+  # Serivce code = 00C8 : Random Access R/W (Protected)
+  # Serivce code = 00CA : Random Access Read only (Protected)
+  # Serivce code = 00CC : Cyclic Access R/W (Protected)
+  # Serivce code = 00CE : Cyclic Access Read only (Protected)
+  # Serivce code = 00D0 : Purse (Direct) (Protected)
+  # Serivce code = 00D2 : Purse (Cashback/decrement) (Protected)
+  # Serivce code = 00D4 : Purse (Decrement) (Protected)
+  # Serivce code = 00D6 : Purse (Read only) (Protected)
+  # Serivce code = 0810 : Purse (Direct) (Protected)
+  # Serivce code = 0812 : Purse (Cashback/decrement) (Protected)
+  # Serivce code = 0816 : Purse (Read only) (Protected)
+  # Serivce code = 0850 : Purse (Direct) (Protected)
+  # Serivce code = 0852 : Purse (Cashback/decrement) (Protected)
+  # Serivce code = 0856 : Purse (Read only) (Protected)
+  # Serivce code = 0890 : Purse (Direct) (Protected)
+  # Serivce code = 0892 : Purse (Cashback/decrement) (Protected)
+  # Serivce code = 0896 : Purse (Read only) (Protected)
+  # Serivce code = 08C8 : Random Access R/W (Protected)
+  # Serivce code = 08CA : Random Access Read only (Protected)
+  # Serivce code = 090C : Cyclic Access R/W (Protected)
+  # Serivce code = 090F : Cyclic Access Read only
+   090F:0000 16 01 00 02 2E 9B 81 23 81 1B 15 00 00 04 5A A0 
+   090F:0001 16 01 00 02 2E 9B 81 1B 81 23 05 01 00 04 58 A0 
+   090F:0002 16 01 00 02 2E 99 81 23 81 1C F5 01 00 04 56 A0 
+   090F:0003 16 01 00 02 2E 99 81 1B 81 23 E5 02 00 04 54 A0 
+   090F:0004 16 01 00 02 2E 91 85 29 81 1B D5 03 00 04 52 A0 
+   090F:0005 16 01 00 02 2E 91 81 1B 85 29 F7 04 00 04 50 A0 
+   090F:0006 16 01 00 02 2E 8F DE 05 81 1B 19 06 00 04 4E A0 
+   090F:0007 07 02 00 00 2E 8F DE 05 00 00 95 07 00 04 4C 80 
+   090F:0008 16 01 00 02 2E 8F 81 1B DE 05 AD 03 00 04 4B A0 
+   090F:0009 03 02 00 00 2E 8F DE 05 00 00 29 05 00 04 4A 80 
+   090F:000A 16 01 00 02 2E 8E 0C 02 01 E8 41 01 00 04 48 00 
+   090F:000B 16 01 00 02 2E 8E 01 E8 0C 02 CD 01 00 04 46 00 
+   090F:000C 16 01 00 02 2E 8E 81 1B 81 1C 59 02 00 04 44 A0 
+   090F:000D 16 01 00 02 2E 8C 81 23 81 1B 17 03 00 04 42 A0 
+   090F:000E 16 01 00 02 2E 8C 81 1B 81 24 07 04 00 04 40 A0 
+   090F:000F 16 01 00 02 2E 8B 81 24 81 1B F7 04 00 04 3E A0 
+   090F:0010 16 01 00 02 2E 8B 81 1B 81 24 E7 05 00 04 3C A0 
+   090F:0011 08 02 00 00 2E 8A 81 1B 00 00 D7 06 00 04 3A 80 
+   090F:0012 16 01 00 02 2E 8A 81 24 81 1B EF 02 00 04 39 A0 
+   090F:0013 16 01 00 02 2E 8A 81 1B 81 24 DF 03 00 04 37 A0 
+   090F:0014 data is not available
+  # Serivce code = 1008 : Random Access R/W (Protected)
+  # Serivce code = 100A : Random Access Read only (Protected)
+  # Serivce code = 1048 : Random Access R/W (Protected)
+  # Serivce code = 104A : Random Access Read only (Protected)
+  # Serivce code = 108C : Cyclic Access R/W (Protected)
+  # Serivce code = 108F : Cyclic Access Read only
+   108F:0000 20 00 81 1B 02 03 2E 9B 17 58 F0 00 00 00 00 00 
+   108F:0001 A0 00 81 23 02 13 2E 9B 17 46 00 00 00 00 00 00 
+   108F:0002 20 00 81 23 02 14 2E 9B 15 58 F0 00 00 00 00 00 
+   108F:0003 data is not available
+  # Serivce code = 10C8 : Random Access R/W (Protected)
+  # Serivce code = 10CB : Random Access Read only
+   10CB:0000 81 23 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+   10CB:0001 00 00 00 00 00 00 00 00 00 00 00 00 86 40 00 00 
+   10CB:0002 data is not available
+  # Serivce code = 1108 : Random Access R/W (Protected)
+  # Serivce code = 110A : Random Access Read only (Protected)
+  # Serivce code = 1148 : Random Access R/W (Protected)
+  # Serivce code = 114A : Random Access Read only (Protected)
+  # Serivce code = 1A48 : Random Access R/W (Protected)
+  # Serivce code = 1A4A : Random Access Read only (Protected)
+  # Serivce code = 1A88 : Random Access R/W (Protected)
+  # Serivce code = 1A8A : Random Access Read only (Protected)
+  # Serivce code = 9608 : Random Access R/W (Protected)
+  # Serivce code = 960A : Random Access Read only (Protected)
+
+---------

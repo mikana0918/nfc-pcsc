@@ -49,11 +49,13 @@ nfc.on('reader', async reader => {
 			// - blockSize - 4 for MIFARE Ultralight, 16 for MIFARE Classic
 			// ! Caution! length must be divisible by blockSize (we have to read the whole block(s))
 
-			const data = await reader.read(4, 4);
+			const data = await reader.read(0, 16);
+
+			// const data = await reader.read(1, 1000);
 
 			pretty.info(`data read`, reader, data);
 
-			const payload = data.readInt16BE(0);
+			// const payload = data.readInt16BE(0);
 
 			pretty.info(`data converted`, reader, payload);
 
@@ -62,27 +64,27 @@ nfc.on('reader', async reader => {
 		}
 
 
-		// example write 4 bytes containing 16bit integer
-		// !!! note that we don't need 16 bytes - 16bit integer takes just 2 bytes !!!
-		try {
+		// // example write 4 bytes containing 16bit integer
+		// // !!! note that we don't need 16 bytes - 16bit integer takes just 2 bytes !!!
+		// try {
 
-			// reader.write(blockNumber, data, blockSize = 4, packetSize = 16)
-			// - blockNumber - memory block number where to start writing
-			// - data - what to write
-			// - blockSize - 4 for MIFARE Ultralight, 16 for MIFARE Classic
-			// ! Caution! data.length must be divisible by blockSize (we have to write the whole block(s))
+		// 	// reader.write(blockNumber, data, blockSize = 4, packetSize = 16)
+		// 	// - blockNumber - memory block number where to start writing
+		// 	// - data - what to write
+		// 	// - blockSize - 4 for MIFARE Ultralight, 16 for MIFARE Classic
+		// 	// ! Caution! data.length must be divisible by blockSize (we have to write the whole block(s))
 
-			const data = Buffer.allocUnsafe(4).fill(0);
-			const randomNumber = Math.round(Math.random() * 1000);
-			data.writeInt16BE(randomNumber, 0);
+		// 	const data = Buffer.allocUnsafe(4).fill(0);
+		// 	const randomNumber = Math.round(Math.random() * 1000);
+		// 	data.writeInt16BE(randomNumber, 0);
 
-			await reader.write(4, data);
+		// 	await reader.write(4, data);
 
-			pretty.info(`data written`, reader, randomNumber, data);
+		// 	pretty.info(`data written`, reader, randomNumber, data);
 
-		} catch (err) {
-			pretty.error(`error when writing data`, reader, err);
-		}
+		// } catch (err) {
+		// 	pretty.error(`error when writing data`, reader, err);
+		// }
 
 
 	});

@@ -12,6 +12,7 @@ const nfc = new NFC(); // optionally you can pass logger
 
 nfc.on('reader', reader => {
 
+	console.log(reader)
 	console.log(`${reader.reader.name}  device attached`);
 
 	// enable when you want to auto-process ISO 14443-4 tags (standard=TAG_ISO_14443_4)
@@ -30,7 +31,7 @@ nfc.on('reader', reader => {
 	//
 	// };
 
-	reader.on('card', card => {
+	reader.on('card', async card => {
 
 		// card is object containing following data
 		// [always] String type: TAG_ISO_14443_3 (standard nfc tags like MIFARE) or TAG_ISO_14443_4 (Android HCE and others)
@@ -39,6 +40,11 @@ nfc.on('reader', reader => {
 		// [only TAG_ISO_14443_4] Buffer data: raw data from select APDU response
 
 		console.log(`${reader.reader.name}  card detected`, card);
+
+		const data = await reader.transmit(Buffer.from([0xFF, 0xCA, 0x00, 0x00]), 16)
+		console.info(`data read`, reader, data);
+
+		const payload = data.readInt32BE(0);
 
 	});
 
